@@ -1,0 +1,13 @@
+# Example Terraform Variables
+# Copy this file to terraform.tfvars and fill in your actual values
+# terraform.tfvars is excluded from git to protect your credentials
+
+# VergeOS Configuration
+vergeos_host = "192.168.1.111"  # Your VergeOS host IP or hostname
+vergeos_user = "admin"           # Your VergeOS username
+vergeos_pass = "YourPassword"    # Your VergeOS password
+
+# Talos ISO Image ID
+# Find this by uploading the Talos ISO to VergeOS and getting its file ID
+# Or use the verge-cli to query: verge-cli --get /v4/files --filter "name eq 'talos-metal-amd64.img'"
+talos_image_id = "107"

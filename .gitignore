@@ -1,0 +1,61 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
+terraform.tfvars
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Talos Generated Configs (contain secrets)
+talosconfig
+talosconfig.bak
+controlplane.yaml
+controlplane_*.yaml
+worker.yaml
+kubeconfig
+
+# Secrets and Credentials
+*.token
+*.key
+*.pem
+*.crt
+*_rsa
+*_rsa.pub
+.env
+.env.*
+secrets/
+credentials/
+
+# Sensitive Data
+terraform.tfvars
+*.auto.tfvars
+*.auto.tfvars.json
+
+# OS Files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# Logs
+*.log
+crash.log
+crash.*.log
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+venv/
+env/
+ENV/
