@@ -40,9 +40,15 @@ cd talos-vergeos-automation2
 # Copy the example variables file
 cp terraform.tfvars.example terraform.tfvars
 
-# Edit with your VergeOS credentials
+# Edit with your VergeOS server and credentials
 nano terraform.tfvars
 ```
+
+**Configure the following in `terraform.tfvars`:**
+- `vergeos_host` - Your VergeOS server IP or hostname (e.g., "192.168.1.111")
+- `vergeos_user` - Your VergeOS username (e.g., "admin")
+- `vergeos_pass` - Your VergeOS password
+- `talos_image_id` - The ID of your uploaded Talos ISO in VergeOS
 
 **Important:** Never commit `terraform.tfvars` to git - it contains your credentials!
 
